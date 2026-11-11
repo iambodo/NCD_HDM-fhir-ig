@@ -7,6 +7,6 @@
     "author" : "http://who.int",
     "base" : "who.template.root",
     "dependencies" : {
-      "who.template.root" : "0.5.0"
+      "who.template.root" : "current"
     }
   }
