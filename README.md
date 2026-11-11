@@ -10,6 +10,9 @@ Read the design guide first for the program's purpose, workflow, program stages,
 
 > **Status:** Draft (`0.1.0`, ci-build). This is a prototype and is not ready for production use. Canonical URLs are placeholders (`http://example.org`).
 
+The build of this draft IG is viewable at:
+🔗 https://build.fhir.org/ig/iambodo/NCD_HDM-fhir-ig/
+
 ## Background
 
 The DHIS2 HDM package supports longitudinal follow-up of patients with hypertension and/or diabetes in primary care. It is a fork of the [Simple / Resolve to Save Lives DHIS2 hypertension package](https://github.com/simpledotorg/dhis2-hypertension-package), extended for diabetes. The metadata in this IG was taken from a DHIS2 v2.42.7 instance.
