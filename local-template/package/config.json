@@ -1,6 +1,4 @@
 {
-  "script": "scripts/ant-who.xml",
-  "otherScripts" : ["scripts/ant-who.xml", "scripts/ant.xml"],
   "extraTemplates": [
     {
       "name": "form",
@@ -20,4 +18,3 @@
     }
   }
 }
-
