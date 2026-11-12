@@ -1,0 +1,39 @@
+---
+---
+{% assign localPage = page.path | split: "/" | last %}
+{% assign whoStrings = site.data.stringsWHO['{{[lang]}}'] | default: site.data.stringsWHO.en %}
+{% include fragment-pagebegin.html lang="{{[lang]}}" %}
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+
+
+  {% include fragment-base-navtabs.html type='{{[type]}}' id='{{[id]}}' active='form' lang="{{[lang]}}" %}
+
+
+  <a name="root"> </a>
+  <h2 id="root">Questionnaire: {{site.data.resources[resource_].titlelang['{{[lang]}}'] | escape_once}} - {{whoStrings.Form}}</h2>
+
+  <br/>
+  <p>{{whoStrings.FormPreview}}</p>
+{% capture sdclink %}<a href="https://confluence.hl7.org/display/FHIRI/SDC+Implementations">{{whoStrings.SDCImplementations}}</a>{% endcapture %}
+  <p>{{whoStrings.FormFullRendering | replace: "%LINK%", sdclink}}</p>
+
+<div id="formContainer" 
+  data-type="{{[type]}}" 
+  data-id="{{[id]}}">
+</div>
+
+<br> </br>
+
+    <br> </br>
+    
+    <script src="{{site.data.info.assets}}assets/js/lforms.min.js"></script>
+    <script src="{{site.data.info.assets}}assets/js/lformsFHIR.min.js"></script>
+
+
+    <script src="{{site.data.info.assets}}assets/js/loadquestionnaire.js"></script>
+
+
+
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html lang="{{[lang]}}" %}
